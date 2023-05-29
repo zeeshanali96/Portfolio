@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.header-left {
+  width: 90px;
+  height: 100%;
+  min-height: 100vh;
+  float: left;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* display: inline-block; */
+  background: #404143;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+
+/* logo styling  */
+.logo {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #10b767;
+}
+
+.logo-text {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 50px;
+}
+
+/* toggle menu  */
+.sidemenu-btn {
+  transition: all 0.3s linear;
+  width: 36px;
+  padding: 6px;
+  position: relative;
+  display: none;
+  margin-right: 20px;
+}
+
+.sidemenu-btn span {
+  height: 3px;
+  height: 100%;
+  background-color: white;
+  display: block;
+}
+
+.sidemenu-btn span:nth-child(2) {
+  margin: 4px 0;
+}
+
+/* slide menu  */
+.site-main-menu {
+  list-style: none;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+.site-main-menu span {
+  display: block;
+}
+
+.site-main-menu li > a {
+  display: block;
+  width: 100%;
+  padding: 15px 1px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #c8c8c8;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #313439;
+  position: relative;
+}
+
+.site-main-menu i {
+  font-size: 25px;
+}
+
+.site-main-menu li.active > a {
+  color: #19f58b;
+}
+
+/* the bar that show on icon  */
+.site-main-menu li.active > a::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  top: 0;
+  right: 0;
+  background-color: #19f58b;
+}
+
+.site-main-menu li.active > a i {
+  color: #19f58b;
+}
